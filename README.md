@@ -4,19 +4,19 @@ garlicjs-rails wraps the [Garlic.js](http://garlicjs.org/) library in a rails en
 
 Garlic.js allows you to automatically persist your forms' text field values locally, until the form is submitted. This way, your users don't lose any precious data if they accidentally close their tab or browser.
 
-It strives to have a javascript agnostic interface for UI/UX developers that might want to use it. Just add some data-persist="garlic" in your form tags, and you're good to go!
+It strives to have a javascript agnostic interface for UI/UX developers that might want to use it. Just add some `data-persist="garlic"` in your form tags, and you're good to go!
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-  gem 'garlicjs-rails'
+    gem 'garlicjs-rails'
 
 ## Usage
 
 Add the following directive to your Javascript manifest file (application.js):
 
-  //= require garlic
+    //= require garlic
 
 ## Versioning
 
