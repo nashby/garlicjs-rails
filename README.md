@@ -20,7 +20,7 @@ Add the following directive to your Javascript manifest file (application.js):
 
 ## Versioning
 
-garlicjs-rails 1.0.2 == Garlic.js 1.0.2
+garlicjs-rails 1.0.3 == Garlic.js 1.0.3
 
 ## Contributing
 
