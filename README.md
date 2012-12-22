@@ -18,6 +18,17 @@ Add the following directive to your Javascript manifest file (application.js):
 
     //= require garlic
 
+## Compatibility
+
+Garlic.js relies on localStorage, which is only compatible with "modern" browsers: IE8+, Chrome 4+, FF 4+, Safari 4+, Opera 11+.
+To add support for IE6 and IE7, add the `localstorageshim-rails` gem to your Gemfile:
+
+    gem 'localstorageshim-rails'
+
+And add the following line to your application layout (must be before garlicjs is loaded):
+
+    <%= localstorage_shim %>
+
 ## Versioning
 
 garlicjs-rails 1.0.3 == Garlic.js 1.0.3
