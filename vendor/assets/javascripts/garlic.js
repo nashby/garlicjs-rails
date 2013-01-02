@@ -99,9 +99,7 @@
     }
 
     , getOptions: function ( options ) {
-      options = $.extend( {}, $.fn[this.type].defaults, options, this.$element.data() );
-
-      return options;
+      return $.extend( {}, $.fn[this.type].defaults, options, this.$element.data() );
     }
 
     /* temporary store data / state in localStorage */
@@ -353,6 +351,11 @@
 
       // don't bind an elem with data-storage=false
       if ( 'undefined' !== typeof fieldOptions.storage && !fieldOptions.storage ) {
+        return;
+      }
+
+      // don't bind a password type field
+      if ( 'password' === $( self ).attr( 'type' ) ) {
         return;
       }
 
