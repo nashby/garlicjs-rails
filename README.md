@@ -31,7 +31,7 @@ And add the following line to your application layout (must be before garlicjs i
 
 ## Versioning
 
-garlicjs-rails 1.2.2 == Garlic.js 1.2.2
+garlicjs-rails 1.3.0 == Garlic.js 1.3.0
 
 ## Contributing
 
